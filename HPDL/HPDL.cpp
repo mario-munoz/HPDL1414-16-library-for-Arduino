@@ -143,6 +143,7 @@ void HPDL::putcc(byte ds,char d)
       }
 	delay(1);
 	digitalWrite(_wri, 0);
-	delay(1);
+	delay(5);
+	digitalWrite(_wri, 1);
 	return;
 }
